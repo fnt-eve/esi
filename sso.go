@@ -17,14 +17,6 @@ import (
 	"golang.org/x/oauth2"
 )
 
-// Handle our context keys.
-type contextKey string
-
-// ContextOAuth2 is the context for GoESI authentication. Pass a tokenSource with this key to a context for an ESI API Call
-var (
-	ContextOAuth2 = contextKey("token")
-)
-
 // SSOAuthenticator provides interfacing to the EVE SSO. NewSSOAuthenticator is used to create
 // this structure.
 type SSOAuthenticator struct {
